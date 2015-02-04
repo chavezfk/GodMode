@@ -1,3 +1,15 @@
 name: GodMode
 main: nmt.minecraft.chavezfk.GodMode.GodMode
 version: 1.0
+description: saves survival, puts in creative, returns to saved survival
+
+commands:
+    god:
+        description: Sets God Mode
+        usage: /god [1 or 0]
+        permission: GodMode.god
+        permission-message: Are you an admin? I think not. Access Denied! 
+permissions:
+    god:
+        description: gives access to god command
+        default: op
